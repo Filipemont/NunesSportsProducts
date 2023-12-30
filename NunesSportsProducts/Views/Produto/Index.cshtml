@@ -1,0 +1,51 @@
+﻿@model List<ProdutoModel>
+@{
+    ViewData["Title"] = "Listagem de produtos";
+}
+
+<div class="text-center">
+
+    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <a class="btn btn-primary" role="button" asp-controller="Produto" asp-action="Criar">Adicionar novo produto</a>
+    </div>
+
+    <br />
+
+    <h1 class="display-4">Listagem de Produtos</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                
+                <th scope="col">Código do Produto</th>
+                <th scope="col">Nome do Produto</th>
+                <th scope="col">Preço do Produto</th>
+                <th scope="col">Descrição do Produto</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            @if(Model != null && Model.Any())
+            {
+                foreach(ProdutoModel produto in Model)
+                {
+                    <tr>
+                        <th scope="row">@produto.Id</th>
+                        <td>@produto.Nome</td>
+                        <td>R$ @produto.Preco</td>
+                        <td>@produto.DescricaoCurta</td>
+                        <td>
+                            <div class="btn-group" role="group">
+                                <a role="button" class="btn btn-info" asp-route-id="@produto.Id" asp-controller="Produto" asp-action="Detalhes">Ver mais</a>
+                                <a role="button" class="btn btn-primary" asp-route-id="@produto.Id" asp-controller="Produto" asp-action="Editar">Editar</a>
+                                <a role="button" class="btn btn-danger" asp-route-id="@produto.Id" asp-controller="Produto" asp-action="ApagarConfirmacao">Apagar</a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
+
+
