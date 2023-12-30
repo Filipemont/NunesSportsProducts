@@ -7,6 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\images\background.avif" />
+    <Content Remove="wwwroot\images\black and red.png" />
+    <Content Remove="wwwroot\images\esportes - Copy.jpg" />
+    <Content Remove="wwwroot\images\esportes.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.25" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.25">
       <PrivateAssets>all</PrivateAssets>

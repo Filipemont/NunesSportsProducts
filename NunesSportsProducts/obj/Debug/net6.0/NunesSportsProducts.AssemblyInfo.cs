@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NunesSportsProducts")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+92204fd0e2ef0a48410f6a10798a60a538e5a1b4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+96a608b0e144335ae02bf7cca187c69a779a987f")]
 [assembly: System.Reflection.AssemblyProductAttribute("NunesSportsProducts")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NunesSportsProducts")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

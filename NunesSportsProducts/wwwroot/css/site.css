@@ -14,7 +14,10 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    background-image: url(../images/black-red.png);
+    color: white;
+    background-size: cover;
+    margin-bottom: 60px;
 }
 
 .field-validation-error{
@@ -29,3 +32,4 @@ body {
     width:30px;
     height:31px;
 }
+

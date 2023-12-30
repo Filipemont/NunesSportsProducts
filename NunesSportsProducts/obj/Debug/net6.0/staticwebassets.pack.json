@@ -13,6 +13,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\gitHub\\NunesSportsProducts\\NunesSportsProducts\\wwwroot\\images\\black-red.png",
+      "PackagePath": "staticwebassets\\images\\black-red.png"
+    },
+    {
+      "Id": "D:\\gitHub\\NunesSportsProducts\\NunesSportsProducts\\wwwroot\\images\\esportes.png",
+      "PackagePath": "staticwebassets\\images\\esportes.png"
+    },
+    {
       "Id": "D:\\gitHub\\NunesSportsProducts\\NunesSportsProducts\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
