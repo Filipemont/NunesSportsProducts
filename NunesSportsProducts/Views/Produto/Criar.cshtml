@@ -11,18 +11,22 @@
     <div class="mb-3">
         <label for="produto" class="form-label">Nome do produto:</label>
         <input type="text" asp-for="Nome" class="form-control" placeholder="Digite o nome do produto">
+        @Html.ValidationMessageFor(x =>x.Nome)
     </div>
     <div class="mb-3">
         <label class="form-label" for="preco">Preço:</label>
-        <input type="text" asp-for="Preco" class="form-control" placeholder="Digite o preço do produto">
+        <input type="number" asp-for="Preco" class="form-control" placeholder="Digite o preço do produto">
+        @Html.ValidationMessageFor(x => x.Preco)
     </div>
     <div class="mb-3">
         <label for="descricaoCurta" class="form-label">Descrição curta:</label>
         <input type="text" asp-for="DescricaoCurta" class="form-control" placeholder="Breve descrição">
+        @Html.ValidationMessageFor(x => x.DescricaoCurta)
     </div>
     <div class="mb-3">
         <label class="form-label" for="descricaoCompleta">Descrição Completa:</label>
         <textarea class="form-control" asp-for="DescricaoCompleta" id="exampleFormControlTextarea1" rows="3" placeholder="Descrição completa"></textarea>
+        @Html.ValidationMessageFor(x => x.DescricaoCompleta)
     </div>
     <div class="d-grid gap-2">
     <button type="submit" class="btn btn-primary">Adicionar</button>

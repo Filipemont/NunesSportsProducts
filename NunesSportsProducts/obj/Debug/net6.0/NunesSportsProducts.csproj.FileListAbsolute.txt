@@ -66,3 +66,4 @@ D:\gitHub\NunesSportsProducts\NunesSportsProducts\bin\Debug\net6.0\runtimes\win\
 D:\gitHub\NunesSportsProducts\NunesSportsProducts\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 D:\gitHub\NunesSportsProducts\NunesSportsProducts\obj\Debug\net6.0\NunesSportsProducts.csproj.AssemblyReference.cache
 D:\gitHub\NunesSportsProducts\NunesSportsProducts\obj\Debug\net6.0\NunesSportsProducts.csproj.CopyComplete
+D:\gitHub\NunesSportsProducts\NunesSportsProducts\obj\Debug\net6.0\NunesSportsProducts.sourcelink.json

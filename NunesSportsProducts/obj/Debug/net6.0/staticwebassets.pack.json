@@ -85,6 +85,14 @@
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
+      "Id": "D:\\gitHub\\NunesSportsProducts\\NunesSportsProducts\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-sandstone.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-sandstone.css"
+    },
+    {
+      "Id": "D:\\gitHub\\NunesSportsProducts\\NunesSportsProducts\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-sandstone.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-sandstone.min.css"
+    },
+    {
       "Id": "D:\\gitHub\\NunesSportsProducts\\NunesSportsProducts\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },

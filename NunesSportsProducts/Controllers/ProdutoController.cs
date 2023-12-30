@@ -26,8 +26,22 @@ namespace NunesSportsProducts.Controllers
         [HttpPost]
         public IActionResult Criar(ProdutoModel produto)
         {
-            _produtoRepositorie.Adicionar(produto);
-            return RedirectToAction("Index");
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    _produtoRepositorie.Adicionar(produto);
+                    TempData["MensagemSucesso"] = "Produto cadastrado com sucesso";
+                    return RedirectToAction("Index");
+                }
+                return View(produto);
+            }
+            catch (Exception ex)
+            {
+                TempData["MensagemErro"] = $"Erro ao cadastrar o produto! {ex.Message}";
+                return RedirectToAction("Index");
+            }
+
         }
 
         public IActionResult Editar(int id)
@@ -39,8 +53,21 @@ namespace NunesSportsProducts.Controllers
         [HttpPost]
         public IActionResult Editar(ProdutoModel produto)
         {
-            _produtoRepositorie.Editar(produto);
-            return RedirectToAction("Index");
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    _produtoRepositorie.Editar(produto);
+                    TempData["MensagemSucesso"] = "Produto alterado com sucesso";
+                    return RedirectToAction("Index");
+                }
+                return View(produto);
+            }
+            catch (Exception ex)
+            {
+                TempData["MensagemErro"] = $"Erro ao atualizar o produto! {ex.Message}";
+                return RedirectToAction("Index");
+            }
         }
 
         public IActionResult Detalhes(int id)
@@ -56,8 +83,25 @@ namespace NunesSportsProducts.Controllers
 
         public IActionResult Apagar(int id)
         {
-            _produtoRepositorie.Apagar(id);
-            return RedirectToAction("Index");
+            try
+            {
+                bool apagado = _produtoRepositorie.Apagar(id);
+
+                if (apagado == true)
+                {
+                    TempData["MensagemSucesso"] = "Produto apagado com sucesso";
+                }
+                else
+                {
+                    TempData["MensagemErro"] = "Produto não foi apagado";
+                }
+                return RedirectToAction("Index");
+            }
+            catch (Exception ex)
+            {
+                TempData["MensagemErro"] = $"Produto não foi apagado! {ex.Message}";
+                return RedirectToAction("Index");
+            }
         }
     }
 }
